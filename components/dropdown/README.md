@@ -32,72 +32,86 @@ Six different states for the dropdown elememts: **default**, **dropdown displaye
 
 ![Dropdown modes](images/dropdown_states.png)
 
-### Design tokens
+### Color
+### Primary button
+| Tokens	                       | Value   |
+-------------------------------  | --------|
+| selectedOptionBackgroundColo	 | #D9D9D9 |
+| primaryHoverBackgroundColor	   | #000000 |
+| hoveredOptionBackgroundColor	 | #F2F2F2 |
+| disabledColor	                 | #BFBFBF |
+| focusColor	                   | #0C5BA7 |
 
-| Tokens                                | Default value |
-| ----------------------------------    | ------------: |
-| selectedOptionBackgroundColor         |     `#D9D9D9` |
-| fontColor                             |     `#000000` |
-| hoveredOptionBackgroundColor          |     `#F2F2F2` |
-| disabledColor                         |     `#BFBFBF` |
-| focusColor                            |     `#0C5BA7` |
+### Text button
+|Tokens |	Value |
+|------ | ------|
+|textBackgroundColor	|transparent |
+|textFontColor|	#6F2C91 |
+|textHoverBackgroundColor	| #000000 |
+|textHoverFontColor |	#FFFFFF |
+|textActiveBackgroundColor| #676767 |
+|disabledTextFontColor| #CEB7D9 |
+|focusColor	| #005FCC |
 
+### Size
+The component width can adopt the following values:
 
-The dropdown itself cannot be configured, the component only allows the configuration of the trigger through the background color and the color of the text.
+|width	| value |
+--------|-------|
+|small	| 60px |
+|medium	| 240px |
+|large	| 480px |
+|fillParent	|- |
+|fitContent	|- |
 
-## Design Specifications
+The component height is fixed:
+height	value
+min-height	40px
 
-**Width**
+### Margin
+Button margin can use the values:
 
-width | Value
--- | --
-`small` | 60px
-`medium` | 240px
-`large` | 480px
-`fitContent` | -
-`fillParent` | -
-
-**Margin**
-
-margin | Value
--- | --
-`xxsmall` | 6px
-`xsmall` | 16px
-`small` | 24px
-`medium` | 36px
-`large` | 48px
-`xlarge` | 64px
-`xxlarge` | 100px
+|margin	 | value |
+|--------|-------|
+|xxsmall	| 6px |
+| xsmall	| 16px |
+|small |	24px |
+| medium	| 36px |
+| large |	48px |
+| xlarge	| 64px |
+| xxlarge	| 100px |
 
 These values can be applied independently to each side of the component: top bottom left right
 
-**Padding**
+### Padding
+| Property	| Value |
+|-----------| ------|
+|padding-right	| 15px |
+| padding-left  | 20px |
 
-Default dropdown `padding` values
+### Border
+| Property	| Value |
+|-----------|-------|
+|border-radius	| 4px |
+|border-width	| 1px |
+|border-width focus outline	 | 2px |
 
-| Padding left/right             |   `20px/15px` |
--- | --
-| Padding top/bottom             |   `10px/10px` |
+### Typography
+| Property	| Value |
+|-----------|-------|
+|font-size	| 1rem/16px |
+| font-weight	| 400 |
+| line-height	| 1.5em |
 
-Dropdown displayed list elements `padding` values
-
-| Options padding top/bottom    | `10px` |
--- | --
-| Options padding left/right    | `20px` |
-| Last option padding bottom    | `20px` |
-
-
-**Properties**
-
-| Property for single             | Value    |
-| ------------------------------- | -------- |
-| List item padding-left          |`16px`    |
-| height                          |`36px`    |
-| font-size                       |`16px`    |
-| font-weight                     |`Regular` |
-| Icon size                       |`20x20px` |
-| Spacing between icon and label  |`16px`    |
-| Focus outline border-width      |`2px`     |
+### Properties
+|Property	| Value |
+|---------|-------|
+|List item padding-left	 | 16px |
+|height	 | 36px |
+|font-size	| 16px |
+|font-weight	| Regular |
+|Icon size	| 20 x 20px |
+|Spacing between icon and label	 | 16px |
 
 
 ![Dropdown specifications](images/dropdown_specs.png)
